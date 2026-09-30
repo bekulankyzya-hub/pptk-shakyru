@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ата-аналар жиналысына шақыру</title>
+    <meta
+      name="description"
+      content="«Шетпе психологиялық-педагогикалық түзеу кабинеті» КММ ата-аналар жиналысына шақыру сайты."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heart-field" aria-hidden="true">
+      <span class="heart heart-1">❤</span>
+      <span class="heart heart-2">❤</span>
+      <span class="heart heart-3">❤</span>
+      <span class="heart heart-4">❤</span>
+      <span class="heart heart-5">❤</span>
+      <span class="heart heart-6">❤</span>
+      <span class="heart heart-7">❤</span>
+      <span class="heart heart-8">❤</span>
+    </div>
+
+    <main class="page-shell">
+      <section class="invite-card">
+        <div class="gold-emblem" aria-label="Қайырымдылық, қолдау, даму, сенім">❤</div>
+
+        <header class="header-block">
+          <p class="eyebrow">«Шетпе психологиялық-педагогикалық түзеу кабинеті» КММ</p>
+          <h1>Ата-аналар жиналысына шақыру</h1>
+        </header>
+
+        <p class="greeting">
+          Құрметті ата-аналар!<br />
+          Сіздерді “Бала жетістігі ата-ана қуанышы” тақырыбындағы ата-аналар
+          жиналысына шақырамыз!
+        </p>
+
+        <div class="event-grid">
+          <div class="event-item">
+            <span class="event-icon">📅</span>
+            <div>
+              <small>Күні</small>
+              <strong>2 қазан 2026 жыл</strong>
+            </div>
+          </div>
+
+          <div class="event-item">
+            <span class="event-icon">⏰</span>
+            <div>
+              <small>Уақыты</small>
+              <strong>10:00</strong>
+            </div>
+          </div>
+
+          <div class="event-item full-width">
+            <span class="event-icon">📍</span>
+            <div>
+              <small>Өтетін орны</small>
+              <strong>«Шетпе психологиялық-педагогикалық түзеу кабинеті» КММ</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="countdown" aria-label="Жиналысқа дейінгі уақыт">
+          <div class="count-box">
+            <span id="days">00</span>
+            <small>күн</small>
+          </div>
+          <div class="count-box">
+            <span id="hours">00</span>
+            <small>сағ</small>
+          </div>
+          <div class="count-box">
+            <span id="minutes">00</span>
+            <small>мин</small>
+          </div>
+          <div class="count-box">
+            <span id="seconds">00</span>
+            <small>сек</small>
+          </div>
+        </div>
+
+        <div class="values-row" aria-label="Мейірім, қолдау, даму, сенім">
+          <span>Мейірім</span>
+          <span>Қолдау</span>
+          <span>Даму</span>
+          <span>Сенім</span>
+        </div>
+
+        <form id="rsvp-form" name="rsvp" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="rsvp" />
+          <p class="hidden">
+            <label>Do not fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          <input type="hidden" name="status" id="status-input" value="" />
+
+          <div class="form-group">
+            <label for="fullname">Аты-жөніңіз</label>
+            <input
+              id="fullname"
+              name="name"
+              type="text"
+              placeholder="Толық аты-жөніңізді енгізіңіз"
+              autocomplete="name"
+              required
+            />
+            <small id="name-error" class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="button-row">
+            <button type="submit" class="btn btn-accept" data-status="Келемін">Келемін</button>
+            <button type="submit" class="btn btn-reject" data-status="Келе алмаймын">Келе алмаймын</button>
+          </div>
+
+          <div id="status-message" class="status-message hidden" aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
