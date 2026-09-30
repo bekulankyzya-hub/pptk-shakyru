@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ата-аналар жиналысына шақыру</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h2>«Шетпе психологиялық-педагогикалық түзеу кабинеті» КММ</h2>
+            <h1>Шақыру</h1>
+        </div>
+        
+        <p class="greeting">Құрметті ата-аналар, сіздерді ата-аналар жиналысына шақырамыз!</p>
+
+        <div class="info-box">
+            <p>📅 <strong>Күні:</strong> 2.10.2026 жыл</p>
+            <p>⏰ <strong>Сағаты:</strong> 10:00</p>
+            <p>📍 <strong>Өтетін орны:</strong> “Шетпе психологиялық-педагогикалық түзеу кабинеті” Коммуналдық мемлекеттік мекемесі</p>
+        </div>
+
+        <form id="rsvp-form">
+            <div class="form-group">
+                <label for="fullname">Аты-жөніңіз:</label>
+                <input type="text" id="fullname" placeholder="Толық аты-жөніңізді жазыңыз" required>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn btn-accept" onclick="submitRSVP('Келемін')">Келемін</button>
+                <button type="button" class="btn btn-reject" onclick="submitRSVP('Келе алмаймын')">Келе алмаймын</button>
+            </div>
+        </form>
+
+        <div id="status-message" class="hidden"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

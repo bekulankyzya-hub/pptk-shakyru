@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Басқару панелі | Тізім</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-card">
+        <h2>Жиналысқа қатысушылар тізімі</h2>
+        <p>Шетпе ППТК — Ата-аналар жауабы</p>
+
+        <div class="stats">
+            <span class="badge badge-success">Келетіндер: <strong id="count-accept">0</strong></span>
+            <span class="badge badge-danger">Келе алмайтындар: <strong id="count-reject">0</strong></span>
+        </div>
+
+        <table id="responses-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Аты-жөні</th>
+                    <th>Шешімі</th>
+                    <th>Уақыты</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Деректер осы жерге шығады -->
+            </tbody>
+        </table>
+
+        <button class="btn btn-clear" onclick="clearData()">Тізімді тазалау</button>
+        <p><a href="index.html">← Шақыру бетіне қайту</a></p>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
